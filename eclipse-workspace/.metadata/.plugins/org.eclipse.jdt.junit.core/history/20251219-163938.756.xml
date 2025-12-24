@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="automationSelenium" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="runners.TestRunner" time="29.903">
+    <testsuite name="DemoQA browser launch test" time="29.903">
+      <testcase name="First scenario" classname="DemoQA browser launch test" time="29.903">
+        <error>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class="rct-checkbox"&gt;...&lt;/span&gt; is not clickable at point (388, 420). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
+  (Session info: chrome=143.0.7499.110)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5b3c19fff56068d53f097c541c50457f, clickElement {id=f.D0F29C67CD55E83BCC2301B2B1FE3B24.d.E59EA90C14103CDF1AD264F7A33677AC.e.79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.110, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61813}, goog:processID: 20388, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61813/devtoo..., se:cdpVersion: 143.0.7499.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5b3c19fff56068d53f097c541c50457f)] -&gt; css selector: .rct-checkbox]
+Session ID: 5b3c19fff56068d53f097c541c50457f&#13;
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)&#13;
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)&#13;
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)&#13;
+	at pages.LoginPage.radio_check_drop(LoginPage.java:158)&#13;
+	at stepDefinations.LoginSteps.practice_radio_button_check_box_and_drop_downs(LoginSteps.java:101)&#13;
+	at ✽.Practice radio button, check box and drop downs.(file:///C:/Users/LENOVO/eclipse-workspace/automationSelenium/Feature/basic.feature:9)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,43 @@
+package testNG.testNG;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+
+public class NewTest {
+	WebDriver driver;
+  
+  @Test(dataProvider = "Credentials", priority = 1)
+  public void verify( String x, String y) throws InterruptedException {
+	  driver.findElement(By.xpath("//a[text() ='Sign In']")).click();
+	  Thread.sleep(1000);
+	  driver.findElement(By.cssSelector("#username")).sendKeys(x);
+	  driver.findElement(By.cssSelector("#password")).sendKeys(y);   
+	  driver.findElement(By.xpath("//button[text() ='Login']")).submit();
+	  driver.quit();
+  }
+  @DataProvider(name ="Credentials")
+  public Object[][] testData(){
+	  Object[][] data = new Object[][] {{"noonekoteswaraiah", "noone"},{"noonekoteswaraiah","noone"}};
+	  return data;
+  }
+  @BeforeMethod
+  public void beforeMethod() {
+	  driver = new ChromeDriver();
+	  driver.get("https://jpetstore.aspectran.com/");
+	  driver.manage().window().maximize();
+	  
+	  
+	  
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+	  
+  }
+
+}

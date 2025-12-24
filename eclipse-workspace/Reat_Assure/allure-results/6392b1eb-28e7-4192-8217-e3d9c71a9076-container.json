@@ -1,0 +1,1 @@
+{"uuid":"6392b1eb-28e7-4192-8217-e3d9c71a9076","name":"Scenario: Delete a post","children":["f6b5c875-d97a-4b2b-b0af-b0098c344c90"],"befores":[{"name":"Steps.auth.generateToken()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1765943189786,"stop":1765943191215}],"afters":[],"start":1765943189785,"stop":1765943191862}

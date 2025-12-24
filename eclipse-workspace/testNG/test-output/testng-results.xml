@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-19T14:41:14 IST" name="TestSuite" finished-at="2025-12-19T14:41:45 IST" duration-ms="30506">
+    <groups>
+      <group name="regression">
+        <method signature="NewTest.verify(java.lang.String,java.lang.String)[pri:1, instance:testNG.testNG.NewTest@1a677343]" name="verify" class="testNG.testNG.NewTest"/>
+        <method signature="NewTest.verify(java.lang.String,java.lang.String)[pri:1, instance:testNG.testNG.NewTest@6aaceffd]" name="verify" class="testNG.testNG.NewTest"/>
+        <method signature="NewTest.verify(java.lang.String,java.lang.String)[pri:1, instance:testNG.testNG.NewTest@291b4bf5]" name="verify" class="testNG.testNG.NewTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2025-12-19T14:41:14 IST" name="NewTestChrome" finished-at="2025-12-19T14:41:15 IST" duration-ms="1040">
+      <class name="testNG.testNG.NewTest">
+        <test-method signature="verify(java.lang.String,java.lang.String)[pri:1, instance:testNG.testNG.NewTest@1a677343]" started-at="2025-12-19T14:41:15 IST" name="verify" data-provider="Credentials1" finished-at="2025-12-19T14:41:15 IST" duration-ms="19" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[noonekoteswaraiah]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[noone]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at testNG.testNG.NewTest.verify(NewTest.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify -->
+        <test-method signature="verify(java.lang.String,java.lang.String)[pri:1, instance:testNG.testNG.NewTest@1a677343]" started-at="2025-12-19T14:41:15 IST" name="verify" data-provider="Credentials1" finished-at="2025-12-19T14:41:15 IST" duration-ms="4" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[noonekoteswaraiah]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[noone]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at testNG.testNG.NewTest.verify(NewTest.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify -->
+      </class> <!-- testNG.testNG.NewTest -->
+    </test> <!-- NewTestChrome -->
+    <test started-at="2025-12-19T14:41:15 IST" name="NewTestEdge2" finished-at="2025-12-19T14:41:40 IST" duration-ms="24908">
+      <class name="testNG.testNG.NewTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.String)[pri:0, instance:testNG.testNG.NewTest@291b4bf5]" started-at="2025-12-19T14:41:15 IST" name="beforeMethod" finished-at="2025-12-19T14:41:23 IST" duration-ms="7100" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://jpetstore.aspectran.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verify(java.lang.String,java.lang.String)[pri:1, instance:testNG.testNG.NewTest@291b4bf5]" started-at="2025-12-19T14:41:23 IST" name="verify" data-provider="Credentials1" finished-at="2025-12-19T14:41:28 IST" duration-ms="4957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[noonekoteswaraiah]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[noone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.testNG.NewTest@291b4bf5]" started-at="2025-12-19T14:41:28 IST" name="afterMethod" finished-at="2025-12-19T14:41:28 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.String)[pri:0, instance:testNG.testNG.NewTest@291b4bf5]" started-at="2025-12-19T14:41:28 IST" name="beforeMethod" finished-at="2025-12-19T14:41:34 IST" duration-ms="6025" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://jpetstore.aspectran.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verify(java.lang.String,java.lang.String)[pri:1, instance:testNG.testNG.NewTest@291b4bf5]" started-at="2025-12-19T14:41:34 IST" name="verify" data-provider="Credentials1" finished-at="2025-12-19T14:41:40 IST" duration-ms="6768" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[noonekoteswaraiah]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[noone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.testNG.NewTest@291b4bf5]" started-at="2025-12-19T14:41:40 IST" name="afterMethod" finished-at="2025-12-19T14:41:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testNG.testNG.NewTest -->
+    </test> <!-- NewTestEdge2 -->
+    <test started-at="2025-12-19T14:41:14 IST" name="NewTestEdge" finished-at="2025-12-19T14:41:45 IST" duration-ms="30506">
+      <class name="testNG.testNG.NewTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.String)[pri:0, instance:testNG.testNG.NewTest@6aaceffd]" started-at="2025-12-19T14:41:15 IST" name="beforeMethod" finished-at="2025-12-19T14:41:25 IST" duration-ms="9391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://jpetstore.aspectran.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verify(java.lang.String,java.lang.String)[pri:1, instance:testNG.testNG.NewTest@6aaceffd]" started-at="2025-12-19T14:41:25 IST" name="verify" data-provider="Credentials1" finished-at="2025-12-19T14:41:34 IST" duration-ms="8972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[noonekoteswaraiah]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[noone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.testNG.NewTest@6aaceffd]" started-at="2025-12-19T14:41:34 IST" name="afterMethod" finished-at="2025-12-19T14:41:34 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.String)[pri:0, instance:testNG.testNG.NewTest@6aaceffd]" started-at="2025-12-19T14:41:34 IST" name="beforeMethod" finished-at="2025-12-19T14:41:40 IST" duration-ms="6157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://jpetstore.aspectran.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verify(java.lang.String,java.lang.String)[pri:1, instance:testNG.testNG.NewTest@6aaceffd]" started-at="2025-12-19T14:41:40 IST" name="verify" data-provider="Credentials1" finished-at="2025-12-19T14:41:45 IST" duration-ms="4974" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[noonekoteswaraiah]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[noone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.testNG.NewTest@6aaceffd]" started-at="2025-12-19T14:41:45 IST" name="afterMethod" finished-at="2025-12-19T14:41:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testNG.testNG.NewTest -->
+    </test> <!-- NewTestEdge -->
+  </suite> <!-- TestSuite -->
+</testng-results>

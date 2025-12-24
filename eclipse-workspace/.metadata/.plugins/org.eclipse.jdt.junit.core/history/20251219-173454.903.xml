@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="automationSelenium" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="runners.TestRunner" time="163.951">
+    <testsuite name="DemoQA browser launch test" time="163.951">
+      <testcase name="First scenario" classname="DemoQA browser launch test" time="35.235">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[placeholder ^='Full ']"}
+  (Session info: MicrosoftEdge=143.0.3650.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [ba95cc708ed9c7eea4f483ebe7ddb271, findElement {using=css selector, value=input[placeholder ^='Full ']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.80, fedcm:accounts: true, goog:processID: 18416, ms:edgeOptions: {debuggerAddress: localhost:55707}, msedge: {msedgedriverVersion: 143.0.3650.63 (3f8c5f47bdc5..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55707/devtoo..., se:cdpVersion: 143.0.3650.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ba95cc708ed9c7eea4f483ebe7ddb271&#13;
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)&#13;
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)&#13;
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)&#13;
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at jdk.proxy2/jdk.proxy2.$Proxy21.sendKeys(Unknown Source)&#13;
+	at pages.LoginPage.enterUser(LoginPage.java:92)&#13;
+	at stepDefinations.LoginSteps.practice_elemnts_and_locators_operation(LoginSteps.java:94)&#13;
+	at ✽.practice elemnts and locators operation(file:///C:/Users/LENOVO/eclipse-workspace/automationSelenium/Feature/basic.feature:8)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Second scenario" classname="DemoQA browser launch test" time="128.715"/>
+    </testsuite>
+  </testsuite>
+</testrun>

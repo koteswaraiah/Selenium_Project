@@ -1,0 +1,1 @@
+{"uuid":"12f692de-9e16-4300-aa17-3b16ed8f3b7f","name":"Scenario: Create a new post","children":["efe0eccb-9c1b-47d4-b70d-d50450b113a9"],"befores":[{"name":"Steps.auth.generateToken()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1765943186681,"stop":1765943188735}],"afters":[],"start":1765943186680,"stop":1765943189771}

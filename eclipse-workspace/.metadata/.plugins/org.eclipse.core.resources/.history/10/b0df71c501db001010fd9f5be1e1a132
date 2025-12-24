@@ -1,0 +1,192 @@
+package pages;
+
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Set;
+
+import org.junit.Assert;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class LoginPage {
+
+    WebDriver driver;
+
+    // Constructor
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
+
+    
+    //locators
+    //id
+    @FindBy(id = "item-0")
+    private WebElement locator_id;
+    //xpath
+    @FindBy(xpath = "//label[text()='Full Name']")
+    private WebElement locator_xpath;
+    @FindBy(css = "input[placeholder ^='Full ']")
+    private WebElement locator_CssSelector;
+    
+    //radio, check box and drop downs.
+    @FindBy(xpath  = "//span[contains(text(), 'Radio Button')]")
+    private WebElement radio_button;
+    @FindBy(css  = ".custom-control-label")
+    private List<WebElement> radio;
+    @FindBy(xpath  = "//span[text() ='Check Box']")
+    private WebElement checkBox;
+    @FindBy(css  = ".rct-checkbox")
+    private WebElement check;
+    @FindBy(xpath  = "//button[@class='rct-option rct-option-expand-all']")
+    private WebElement ExpandButton;
+    @FindBy(css  = ".rct-title")
+    private List<WebElement> checkBocLabel;
+    
+    //Alerts
+    
+
+    @FindBy(xpath = "//h5[starts-with(text(), 'Alerts')]")
+    private WebElement aletrt;
+
+    @FindBy(xpath = "//span[starts-with(text(), 'Alerts')]")
+    private WebElement aletrtLabel;
+    @FindBy(css  = "#promtButton")
+    private WebElement promptAlert;
+    
+    //Window Handles
+    
+    @FindBy(xpath  = "//span[text()='Browser Windows']")
+    private WebElement windowLabel;
+    @FindBy(css  = "#tabButton")
+    private WebElement newTab;
+    // Page actions
+    public void enterUser(String u) {
+    	//click
+        locator_id.click();
+        
+        //sendKeys && clear && fetch value
+        locator_CssSelector.sendKeys(u);
+        String p=locator_CssSelector.getAttribute("value"); 
+        System.out.println(p);
+        locator_CssSelector.clear();
+        
+        //getText && tagName && css value
+        String p1=locator_xpath.getText(); 
+        System.out.println(p1);
+        
+        String p2=locator_xpath.getTagName(); 
+        System.out.println(p2);
+        String p3=locator_xpath.getCssValue("font-size"); 
+        System.out.println(p3);
+        
+        //location && display && size
+        locator_xpath.isDisplayed();
+        Point d= locator_xpath.getLocation();
+        System.out.println(d.getX());
+        System.out.println(d.getY());
+        
+        Dimension size = locator_xpath.getSize();
+
+        
+        System.out.println(size.getHeight());
+        System.out.println(size.getWidth());
+        
+        
+    }
+    
+    public void radio_check_drop() {
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    	//radio_button.click();
+    	
+    	
+    	Wait<WebDriver> waits = new FluentWait<>(driver)
+    	        .withTimeout(Duration.ofSeconds(20))
+    	        .pollingEvery(Duration.ofSeconds(2))
+    	        .ignoring(NoSuchElementException.class)
+    	        .ignoring(StaleElementReferenceException.class);
+
+    	WebElement element = waits.until(ExpectedConditions.elementToBeClickable(radio_button));
+    	element.isDisplayed();
+    	
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    	WebElement k = wait.until(ExpectedConditions.elementToBeClickable(radio_button));
+    	k.click();
+
+    	List<String> actualList = Arrays.asList("Yes", "No", "Impressive");
+    	
+    	for(WebElement e : radio) {
+    		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", e);
+    		e.click();
+    		System.out.println(e.getText());
+    		Assert.assertTrue(actualList.contains(e.getText()));
+    		e.isSelected();
+    		e.isDisplayed();
+    		e.isEnabled();
+    		System.out.println("ko");    		
+    		
+    		
+    	}
+    	//checkBox
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", checkBox);
+		checkBox.click();
+	//	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", check);
+		
+		check.click();
+		
+		ExpandButton.click();
+		for(WebElement e1 : checkBocLabel) {
+			System.out.println(e1.getText());
+		}
+		
+		driver.navigate().to("https://demoqa.com/");
+		
+    }
+    
+    public void Alert_window_frames() {
+    	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", aletrt);
+    	aletrt.click();
+    	aletrtLabel.click();
+    	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", promptAlert);
+    	promptAlert.click();
+    	Alert a= driver.switchTo().alert();
+    	a.sendKeys("Kote");
+    	a.accept();
+    	//driver.navigate().to("https://demoqa.com/");
+    	
+    	//windos handlea
+    	
+    	windowLabel.click();
+    	newTab.click();
+    	Set<String> s = driver.getWindowHandles();
+    	String p = driver.getWindowHandle();
+    	for(String k : s) {
+    		if(!p.equalsIgnoreCase(k)) {
+    			driver.switchTo().window(k);
+    			System.out.println("Second");
+    			
+    		}
+    		
+    		
+    	}
+    	
+    }
+
+  
+
+}

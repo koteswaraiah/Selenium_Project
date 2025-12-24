@@ -1,0 +1,1 @@
+{"uuid":"222b297d-d468-4431-b5f7-d9708bdf39fc","name":"Scenario: Update an existing post","children":["7e9703f7-82a6-40d0-936d-c80579f4bd5d"],"befores":[{"name":"Steps.auth.generateToken()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1765943191876,"stop":1765943193570}],"afters":[],"start":1765943191876,"stop":1765943194941}

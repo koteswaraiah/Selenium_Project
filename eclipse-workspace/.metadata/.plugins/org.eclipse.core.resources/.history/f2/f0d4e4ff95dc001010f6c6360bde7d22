@@ -1,0 +1,40 @@
+package utils;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.*;
+
+
+public class ExcelRead {
+
+    
+
+    public Object[][] getData(String n) throws IOException {
+
+        
+            FileInputStream fis = new FileInputStream("D:\\2026\\data.xlxs");
+            XSSFWorkbook workbook = new XSSFWorkbook(fis);   // FileInputStream used here
+            XSSFSheet sheet = workbook.getSheet(n);
+      
+    
+
+    
+
+        int rowCount = sheet.getPhysicalNumberOfRows();
+        int colCount = sheet.getRow(0).getPhysicalNumberOfCells();
+
+        Object[][] data = new Object[rowCount - 1][colCount];
+
+        for (int i = 1; i < rowCount; i++) { // skip header
+            for (int j = 0; j < colCount; j++) {
+
+                Cell cell = sheet.getRow(i).getCell(j);
+                data[i - 1][j] = cell.toString();
+            }
+        }
+		return data;
+        
+    }    
+}

@@ -1,0 +1,82 @@
+package automate.automate;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.junit.Assert;
+import io.cucumber.java.en.*;
+
+public class LoginSteps {
+	/*
+	
+
+    WebDriver driver;
+
+    @Given("the user is on the Login page")
+    public void the_user_is_on_the_login_page() {
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://demoqa.com/");   // change URL
+    }
+
+    @When("the user enters a valid username")
+    public void the_user_enters_a_valid_username() {
+        driver.findElement(By.id("username")).sendKeys("testuser"); // update locators
+    }
+
+    @When("the user enters a valid password")
+    public void the_user_enters_a_valid_password() {
+        driver.findElement(By.id("password")).sendKeys("Password123"); // update locators
+    }
+
+    @When("the user clicks on the {string} button")
+    public void the_user_clicks_on_the_button(String button) {
+        driver.findElement(By.id("loginButton")).click(); // update locator
+    }
+
+    @Then("the user should be redirected to the Dashboard page")
+    public void the_user_should_be_redirected_to_the_dashboard_page() {
+        Assert.assertTrue(driver.getCurrentUrl().contains("dashboard")); // expected URL
+    }
+
+    @Then("a welcome message should be displayed")
+    public void a_welcome_message_should_be_displayed() {
+        boolean messageDisplayed = driver.findElement(By.id("welcomeMessage")).isDisplayed();
+        Assert.assertTrue(messageDisplayed);
+        driver.quit();
+    }
+    */
+	
+
+@Given("the user is on the Login page")
+public void the_user_is_on_the_login_page() {
+    
+}
+
+@When("the user enters a valid username")
+public void the_user_enters_a_valid_username() {
+    
+}
+
+@When("the user enters a valid password")
+public void the_user_enters_a_valid_password() {
+   
+}
+
+@When("the user clicks on the {string} button")
+public void the_user_clicks_on_the_button(String string) {
+   
+}
+
+@Then("the user should be redirected to the Dashboard page")
+public void the_user_should_be_redirected_to_the_dashboard_page() {
+   
+}
+
+@Then("a welcome message should be displayed")
+public void a_welcome_message_should_be_displayed() {
+  
+}
+
+
+
+}

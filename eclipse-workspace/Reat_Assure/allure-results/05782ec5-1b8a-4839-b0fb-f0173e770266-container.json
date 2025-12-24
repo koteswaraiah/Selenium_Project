@@ -1,0 +1,1 @@
+{"uuid":"05782ec5-1b8a-4839-b0fb-f0173e770266","name":"Scenario: Validate GET request response","children":["9655dbb7-9e27-4b33-aafa-c29972245307"],"befores":[{"name":"Steps.auth.generateToken()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1765943180665,"stop":1765943185471}],"afters":[],"start":1765943180662,"stop":1765943186571}

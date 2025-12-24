@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="automationSelenium" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="runners.TestRunner" time="59.998">
+    <testsuite name="DemoQA browser launch test" time="59.998">
+      <testcase name="First scenario" classname="DemoQA browser launch test" time="36.766"/>
+      <testcase name="Second scenario" classname="DemoQA browser launch test" time="23.232">
+        <error>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [68d5fc0042e6ce240f60ed698b7691eb, findElement {value=//h5[starts-with(text(), 'Alerts')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.80, fedcm:accounts: true, goog:processID: 16832, ms:edgeOptions: {debuggerAddress: localhost:58477}, msedge: {msedgedriverVersion: 143.0.3650.63 (3f8c5f47bdc5..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58477/devtoo..., se:cdpVersion: 143.0.3650.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68d5fc0042e6ce240f60ed698b7691eb&#13;
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)&#13;
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)&#13;
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)&#13;
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at jdk.proxy2/jdk.proxy2.$Proxy21.getWrappedElement(Unknown Source)&#13;
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:474)&#13;
+	at pages.LoginPage.Alert_window_frames(LoginPage.java:175)&#13;
+	at stepDefinations.LoginSteps.alerts_frames_and_windows(LoginSteps.java:108)&#13;
+	at ✽.Alerts,Frames and windows.(file:///C:/Users/LENOVO/eclipse-workspace/automationSelenium/Feature/basic.feature:17)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

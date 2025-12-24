@@ -1,0 +1,19 @@
+Feature: DemoQA browser launch test
+
+Background:
+    Given the user opens the URL "https://demoqa.com/"
+  @smoke
+  Scenario: First scenario
+    Then perofrm driver operations
+    Then practice elemnts and locators operation
+    Then Practice radio button, check box and drop downs.
+    
+    Then Alerts,Frames and windows.
+    Then DropDowns, WebTables, Screen shot and javscript Exegutor.
+  @regression
+  Scenario: Second scenario
+  
+   Then perofrm driver operations
+   Then Alerts,Frames and windows.
+ 
+    Then do nothing

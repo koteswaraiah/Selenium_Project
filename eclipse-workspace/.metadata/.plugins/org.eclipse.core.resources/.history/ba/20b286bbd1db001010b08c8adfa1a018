@@ -1,0 +1,35 @@
+package testNG.testNG;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+
+public class NewTest {
+	WebDriver driver;
+  
+  @Test
+  public void verify() {
+	  driver.findElement(By.xpath("//a[text() ='Sign In']")).click();
+	  driver.findElement(By.id("#username")).sendKeys("noonekoteswaraiah");
+	  driver.findElement(By.id("#password")).sendKeys("noone");
+	  driver.findElement(By.xpath("//button[text() ='Login']")).click();
+	  
+  }
+  @BeforeMethod
+  public void beforeMethod() {
+	  driver = new ChromeDriver();
+	  driver.get("https://jpetstore.aspectran.com/");
+	  
+	  
+	  
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+	  driver.quit();
+  }
+
+}

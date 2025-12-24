@@ -1,0 +1,10 @@
+
+<suite name="TestSuite">
+    <test name="LoginTest">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://example.com"/>
+        <classes>
+            <class name="testNG.testNG.NewTest"/>
+        </classes>
+    </test>
+</suite>

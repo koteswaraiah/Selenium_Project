@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;runners.FailedTestRunner_&apos; to &apos;FailedTestRunner&apos;&#x0D;&#x0A;- Original project: &apos;automationSelenium&apos;&#x0D;&#x0A;- Original element: &apos;runners.FailedTestRunner_&apos;&#x0D;&#x0A;- Renamed element: &apos;runners.FailedTestRunner&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FailedTestRunner_&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;runners{FailedTestRunner_.java[FailedTestRunner_" matchStrategy="1" name="FailedTestRunner" qualified="false" references="true" similarDeclarations="false" stamp="1766144001902" textual="false" version="1.0"/>
+</session>

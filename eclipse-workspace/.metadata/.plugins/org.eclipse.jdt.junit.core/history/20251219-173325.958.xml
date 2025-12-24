@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="automationSelenium" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="runners.TestRunner" time="77.672">
+    <testsuite name="DemoQA browser launch test" time="77.672">
+      <testcase name="First scenario" classname="DemoQA browser launch test" time="33.86"/>
+      <testcase name="Second scenario" classname="DemoQA browser launch test" time="43.812"/>
+    </testsuite>
+  </testsuite>
+</testrun>

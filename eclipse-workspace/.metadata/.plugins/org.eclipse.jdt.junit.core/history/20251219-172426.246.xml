@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="FailedTestRunner" project="automationSelenium" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="runners.FailedTestRunner" time="0.15">
+    <testsuite name="DemoQA browser launch test" time="0.15">
+      <testcase name="Second scenario" classname="DemoQA browser launch test" time="0.15">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'the user opens the URL "https://demoqa.com/"' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user opens the URL {string}")
+public void the_user_opens_the_url(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("perofrm driver operations")
+public void perofrm_driver_operations() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Alerts,Frames and windows.")
+public void alerts_frames_and_windows() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("do nothing")
+public void do_nothing() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

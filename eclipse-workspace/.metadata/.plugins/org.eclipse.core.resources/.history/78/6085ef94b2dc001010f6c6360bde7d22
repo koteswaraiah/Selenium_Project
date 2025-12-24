@@ -1,0 +1,79 @@
+package testNG.testNG;
+
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import utils.ExcelRead;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.AfterMethod;
+
+
+
+public class NewTest {
+	WebDriver driver;
+	
+	    @Parameters({"browser", "url"})
+	    @BeforeMethod
+	    public void beforeMethod(String browser, String url) {
+	        // Initialize WebDriver based on browser parameter
+	        if (browser.equalsIgnoreCase("chrome")) {
+	        	WebDriverManager.chromedriver().setup();
+	            driver = new ChromeDriver();
+	            driver.manage().window().maximize();
+	        }else if(browser.equalsIgnoreCase("edge")) {
+	        	System.setProperty("webdriver.edge.driver", "C:\\Users\\Koti\\Drivers\\edgedriver_win64\\msedgedriver.exe");
+	        	driver = new EdgeDriver();
+	        	
+	          
+	        }
+	        
+	        // Open the URL
+	        driver.get(url);
+	    }
+ 
+  @Test(dataProvider = "Credentials1", priority = 1, groups = {"smoke"})
+  public void verify( String x, String y) throws InterruptedException {
+	  
+	  
+	  driver.findElement(By.xpath("//a[text() ='Sign In']")).click();
+	  Thread.sleep(1000);
+	  driver.findElement(By.cssSelector("#username")).sendKeys(x);
+	  driver.findElement(By.cssSelector("#password")).sendKeys(y);   
+	  driver.findElement(By.xpath("//button[text() ='Login']")).submit();
+	  driver.quit();
+  }
+  @DataProvider(name ="Credentials")
+  public Object[][] testData(){
+	  Object[][] data = new Object[][] {{"noonekoteswaraiah", "noone"},{"noonekoteswaraiah","noone"}};
+	  return data;
+  }
+  
+  @DataProvider(name ="Credentials1")
+  public Object[][] testData1() throws IOException{
+	  ExcelRead read = new ExcelRead();
+	  Object[][] data = read.getData(0);
+	  return data;
+  }
+
+  
+  
+ 
+	  
+	
+
+  @AfterMethod
+  public void afterMethod() {
+	  
+  }
+
+}
