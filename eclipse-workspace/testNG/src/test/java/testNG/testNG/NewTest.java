@@ -54,7 +54,7 @@ public class NewTest {
   }
   @DataProvider(name ="Credentials")
   public Object[][] testData(){
-	  Object[][] data = new Object[][] {{"noonekoteswaraiah", "noone"},{"noonekoteswaraiah","noone"}};
+	  Object[][] data = new Object[][] {{"noone", "noone"},{"noone","noone"}};
 	  return data;
   }
   
