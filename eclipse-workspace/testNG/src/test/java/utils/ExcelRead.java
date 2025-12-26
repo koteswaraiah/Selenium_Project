@@ -7,7 +7,7 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.*;
 
 
-public class ExcelRead {
+public class Excel {
 
     
 
